@@ -1,6 +1,7 @@
 {
 	"name": "chat-app",
 	"version": "0.1.0",
+	"homepage": "https://daniel-ulises.github.io/chat-app",
 	"private": true,
 	"dependencies": {
 		"query-string": "^7.0.0",
