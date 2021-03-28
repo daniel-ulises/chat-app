@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as c;
+
+@font-face {
+	font-family: Montserrat;
+	src: url(./fonts/Montserrat-Regular.otf);
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(./fonts/Roboto-Medium.ttf);
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: c.$accent;
+}

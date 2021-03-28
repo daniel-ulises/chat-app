@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as c;
+
+.card {
+	&.welcome {
+		text-align: center;
+		padding: 1rem 2rem;
+	}
+
+	&.messages {
+		background-color: darken(c.$secondary, 15%);
+		outline: 1px solid c.$secondary;
+		color: c.$text-light;
+		height: 85%;
+		max-height: 85%;
+		overflow-y: scroll;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			li {
+				padding: 1rem;
+				justify-content: left;
+
+				&:nth-of-type(even) {
+					background-color: darken(c.$primary, 5%);
+				}
+
+				& div.name {
+					align-self: flex-start;
+					margin-right: 0.5rem;
+				}
+				& div.message {
+					word-break: break-all;
+				}
+			}
+		}
+	}
+}

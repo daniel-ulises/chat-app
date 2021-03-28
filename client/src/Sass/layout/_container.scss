@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as c;
+
+.container {
+	padding: 1rem;
+	background-color: c.$primary;
+	color: c.$text-light;
+	width: 30rem;
+	max-width: 90%;
+	margin: auto;
+	box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.8);
+
+	&.message-box {
+		height: 95%;
+		justify-content: space-between;
+		position: relative;
+
+		& .connected-as {
+			font-size: 0.8rem;
+			position: absolute;
+			bottom: 0.3rem;
+			background-color: c.$primary;
+
+			strong {
+				color: darkseagreen;
+			}
+		}
+	}
+}

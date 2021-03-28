@@ -1,0 +1,15 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "A small chat app using Socket IO",
+  "main": "app.js",
+  "repository": "https://github.com/daniel-ulises/SimpleChat",
+  "author": "Daniel Ulises",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0"
+  }
+}

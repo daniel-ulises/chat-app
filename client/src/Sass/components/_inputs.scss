@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as c;
+
+input {
+	box-sizing: inherit;
+	background-color: c.$text-dark;
+	color: c.$text-light;
+	padding: 0.6rem;
+	margin: 1rem auto;
+	width: 100%;
+	transition: outline 600ms ease;
+
+	&:focus {
+		outline: 0.1rem solid c.$secondary;
+	}
+
+	&#msg {
+		margin-right: 0.2rem;
+	}
+}

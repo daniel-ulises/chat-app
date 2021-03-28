@@ -1,0 +1,18 @@
+@use "./base/" as *;
+@use "./abstracts/variables" as c;
+@use "./components/" as *;
+@use "./layout/" as *;
+
+body {
+	background-color: c.$bg-color;
+	font-family: Montserrat;
+	line-height: 1.5;
+}
+
+main {
+	height: 33rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

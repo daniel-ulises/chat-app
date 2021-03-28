@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as c;
+
+button {
+	font-family: Roboto;
+	text-align: center;
+	padding: 0.5rem 2rem;
+	text-transform: uppercase;
+	box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	transition: outline-offset 200ms ease;
+	transition: background-color 200ms ease-out;
+
+	&.primary {
+		background-color: c.$primary;
+		color: c.$text-light;
+
+		&:hover,
+		&:focus {
+			background-color: lighten(c.$primary, 5%);
+		}
+
+		&:active {
+			background-color: darken(c.$primary, 10%);
+		}
+	}
+
+	&.secondary {
+		background-color: c.$secondary;
+		color: c.$text-light;
+
+		&:hover,
+		&:focus {
+			background-color: lighten(c.$secondary, 5%);
+		}
+
+		&:active {
+			background-color: darken(c.$secondary, 10%);
+		}
+	}
+}
