@@ -1,6 +1,5 @@
 {
 	"name": "chat-app",
-	"homepage": "https://daniel-ulises.github.io/chat-app",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {

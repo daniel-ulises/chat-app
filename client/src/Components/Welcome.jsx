@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import Footer from "./Footer";
+import {Link} from "react-router-dom";
 
 export default function Welcome() {
+	const [userName, setUserName] = useState("");
+
+	const handleChange = e => {
+		setUserName(e.target.value);
+	};
 	return (
 		<>
 			<main>
@@ -14,15 +20,23 @@ export default function Welcome() {
 						</p>
 					</div>
 					<div className="card login flex-column">
-						<form action="/chat" className="flex-column">
+						<form className="flex-column">
 							<input
 								type="text"
 								name="username"
 								id="username"
 								placeholder="Set a name"
+								onChange={handleChange}
 								required
 							/>
-							<button className="primary self-right">Join</button>
+							<Link
+								to={{
+									pathname: "/chat",
+									state: {userName: userName},
+								}}
+							>
+								<button className="primary self-right">Join</button>
+							</Link>
 						</form>
 					</div>
 				</div>

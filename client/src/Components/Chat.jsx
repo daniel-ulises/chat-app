@@ -1,14 +1,12 @@
 import React, {useState, useEffect} from "react";
 import Footer from "./Footer";
-// Get the username from the previously inserted form
-import queryString from "query-string";
 import {io} from "socket.io-client";
 // Initialize SocketIO and connect it to the server
 const socket = io(process.env.REACT_APP_ORIGIN_SERVER);
 
 export default function Chat(props) {
-	// Set the queried name from the previous form as the username
-	const {username} = queryString.parse(props.location.search);
+	// Get the username inserted from the welcome page with location.state.userName
+	const [userName, setUserName] = useState(props.location.state.userName);
 	const [message, setMessage] = useState({});
 	const [messages, setMessages] = useState([]);
 
@@ -33,7 +31,7 @@ export default function Chat(props) {
 	// that to our state
 	const inputValue = e => {
 		setMessage({
-			name: username,
+			name: userName,
 			msg: e.target.value,
 		});
 	};
@@ -77,7 +75,7 @@ export default function Chat(props) {
 						</button>
 					</form>
 					<div className="connected-as">
-						Connected as: <strong>{username}</strong>
+						Connected as: <strong>{userName}</strong>
 					</div>
 				</div>
 			</main>
