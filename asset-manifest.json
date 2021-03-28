@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chat-app/static/css/main.58de160d.chunk.css",
-    "main.js": "/chat-app/static/js/main.de0a9517.chunk.js",
-    "main.js.map": "/chat-app/static/js/main.de0a9517.chunk.js.map",
+    "main.js": "/chat-app/static/js/main.93d78e98.chunk.js",
+    "main.js.map": "/chat-app/static/js/main.93d78e98.chunk.js.map",
     "runtime-main.js": "/chat-app/static/js/runtime-main.51c25996.js",
     "runtime-main.js.map": "/chat-app/static/js/runtime-main.51c25996.js.map",
     "static/js/2.29cea82b.chunk.js": "/chat-app/static/js/2.29cea82b.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.51c25996.js",
     "static/js/2.29cea82b.chunk.js",
     "static/css/main.58de160d.chunk.css",
-    "static/js/main.de0a9517.chunk.js"
+    "static/js/main.93d78e98.chunk.js"
   ]
 }
