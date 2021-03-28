@@ -18,7 +18,7 @@ For now the functionality is really basic, but features will be added in the nea
 
 Clonse the repository
 
-`git clone https://github.com/daniel-ulises/Chat-App`
+`git clone https://github.com/daniel-ulises/chat-app.git`
 
 Go into both folders **_client_** and **_server_** and install the dependencies
 
