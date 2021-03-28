@@ -14,7 +14,7 @@ For now the functionality is really basic, but features will be added in the nea
 -   [ ] Add user authentication / Anonymous chatting
 -   [ ] Add rooms / create rooms
 
-## test it yourself!
+## Test it yourself!
 
 Clonse the repository
 
@@ -43,6 +43,8 @@ After editing these two lines, you can proceed to run the server and the client 
 > **_/server_**  
 > `node app.js` or `nodemon app.js`
 
+Instead of `BrowserRouter`, I had to use `HashRouter` instead so it works with Github pages, this will cause a small issue when starting developemnt. When you start development, the browser will open at `http://localhost:3000/#/`, in order to view the main page you will have to add `welcome` to the end of the URL, making it look like this `http://localhost:3000/#/welcome`. I will try to find a solution to this so starting development will not open a blank page.
+
 ## Live demo
 
-You can also see a live demo [here](https://daniel-ulises.github.io/Chat-App)
+You can also see a live demo [here](https://daniel-ulises.github.io/chat-app/#/welcome)
