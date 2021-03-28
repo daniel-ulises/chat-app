@@ -7,7 +7,7 @@ import "./main.css";
 export default function App() {
 	return (
 		<Router>
-			<Route exact path="/" component={Welcome} />
+			<Route exact path="/welcome" component={Welcome} />
 			<Route path="/chat" component={Chat} />
 		</Router>
 	);
