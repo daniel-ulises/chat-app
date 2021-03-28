@@ -2,6 +2,7 @@
 	"name": "chatapp",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://daniel-ulises.github.io/chat-app",
 	"dependencies": {
 		"query-string": "^7.0.0",
 		"react": "^17.0.2",
