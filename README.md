@@ -28,10 +28,10 @@ Once the dependencies are installed, edit _app.js_ and _ChatRoom.jsx_ files, in 
 
 ```javascript
 // ChatRoom.jsx
-const socket = io(process.env.REACT_APP_ORIGIN_SERVER);
+const socket = io(process.env.REACT_APP_ORIGIN_SERVER); // Change this to "http://localhost:PORT_OF_YOUR_CHOICE" 
 
 // app.js
-origin: process.env.ORIGIN_CLIENT;
+origin: process.env.ORIGIN_CLIENT; // Change this to "http://localhost:3000"
 ```
 
 After editing these two lines, you can proceed to run the server and the client and have fun with this very simple chat app.
