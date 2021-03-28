@@ -8,7 +8,7 @@ export default function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route exact path="/" component={Welcome} />
+				<Route exact path="/chat-app" component={Welcome} />
 				<Route path="/chat" component={Chat} />
 			</Switch>
 		</Router>
